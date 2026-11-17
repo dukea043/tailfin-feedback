@@ -1,0 +1,38 @@
+name: Bug report
+description: Something in Tailfin broke or looked wrong.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. A save file helps a lot: in the game, open **Help → Send feedback → Download save for a bug report**, then drag the file into the box below.
+        Please don't include personal details you don't want made public: this page can be seen by anyone.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How did you get there?
+      description: The steps before it happened, as best you remember.
+    validations:
+      required: false
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: For example, iPhone Safari, or Windows Chrome
+    validations:
+      required: false
+  - type: textarea
+    id: save
+    attributes:
+      label: Bug report save
+      description: Drag the file from "Download save for a bug report" here.
+    validations:
+      required: false

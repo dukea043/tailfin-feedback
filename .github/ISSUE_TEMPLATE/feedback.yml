@@ -1,0 +1,32 @@
+name: Feedback
+description: Tell us how your game of Tailfin went.
+title: "Feedback: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for playing Tailfin. In the game, open **Help → Send feedback**, answer the questions and click **Copy**. Then paste the text below.
+        Please don't include personal details you don't want made public: this page can be seen by anyone.
+  - type: textarea
+    id: pasted
+    attributes:
+      label: Your feedback from the game
+      description: Paste the text you copied from Send feedback. It includes your answers, the game version and a line about your airline.
+      placeholder: Paste here
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Optional. Anything you didn't get to say in the game.
+    validations:
+      required: false
+  - type: textarea
+    id: save
+    attributes:
+      label: Bug report save (optional)
+      description: If something went wrong, use "Download save for a bug report" in the game, then drag the file here.
+    validations:
+      required: false
