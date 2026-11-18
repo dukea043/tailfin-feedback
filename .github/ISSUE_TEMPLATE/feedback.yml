@@ -16,6 +16,18 @@ body:
       placeholder: Paste here
     validations:
       required: true
+  - type: dropdown
+    id: first-look
+    attributes:
+      label: First impression of the Dashboard
+      description: Think back to the first time you saw the Dashboard (the screen after you start your airline). What did it look most like?
+      options:
+        - A game
+        - A business dashboard or office app
+        - A spreadsheet or report
+        - Can't say
+    validations:
+      required: false
   - type: textarea
     id: extra
     attributes:
