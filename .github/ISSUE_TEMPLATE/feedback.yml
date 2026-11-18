@@ -27,6 +27,6 @@ body:
     id: save
     attributes:
       label: Bug report save (optional)
-      description: If something went wrong, use "Download save for a bug report" in the game, then drag the file here.
+      description: If something went wrong, use "Download save" in the game's Send feedback box, then drag the file here.
     validations:
       required: false

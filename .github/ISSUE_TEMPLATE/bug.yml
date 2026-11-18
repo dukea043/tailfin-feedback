@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting this. A save file helps a lot: in the game, open **Help → Send feedback → Download save for a bug report**, then drag the file into the box below.
+        Thanks for reporting this. A save file helps a lot: in the game, open **Help → Send feedback → Download save**, then drag the file into the box below.
         Please don't include personal details you don't want made public: this page can be seen by anyone.
   - type: textarea
     id: what
@@ -33,6 +33,6 @@ body:
     id: save
     attributes:
       label: Bug report save
-      description: Drag the file from "Download save for a bug report" here.
+      description: Drag the file from "Download save" (in Send feedback) here.
     validations:
       required: false
