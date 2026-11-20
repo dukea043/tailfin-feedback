@@ -8,6 +8,7 @@ body:
       value: |
         Thanks for playing Tailfin. In the game, open **Help → Send feedback**, answer the questions and click **Copy**. Then paste the text below.
         Please don't include personal details you don't want made public: this page can be seen by anyone.
+        Only the first three answers are required.
   - type: textarea
     id: pasted
     attributes:
@@ -16,6 +17,85 @@ body:
       placeholder: Paste here
     validations:
       required: true
+  - type: dropdown
+    id: experience
+    attributes:
+      label: How much have you played airline, tycoon or management games?
+      options:
+        - Never
+        - A few
+        - Many
+    validations:
+      required: true
+  - type: dropdown
+    id: ending
+    attributes:
+      label: How did your game end, or where is it now?
+      options:
+        - Still playing
+        - Went bankrupt
+        - Finished the ten years
+        - Stopped before the end
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: In your own words, what were you trying to do?
+    validations:
+      required: false
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Running the airline was…
+      options:
+        - 1 Very difficult
+        - 2 Difficult
+        - 3 Somewhat difficult
+        - 4 Neither easy nor difficult
+        - 5 Somewhat easy
+        - 6 Easy
+        - 7 Very easy
+    validations:
+      required: false
+  - type: textarea
+    id: difficulty-why
+    attributes:
+      label: What made it feel that way?
+    validations:
+      required: false
+  - type: dropdown
+    id: cause
+    attributes:
+      label: When things went badly, what caused it most?
+      options:
+        - My own decisions
+        - Events I couldn't control
+        - Both
+        - I couldn't tell
+        - Nothing went badly
+    validations:
+      required: false
+  - type: dropdown
+    id: decisions
+    attributes:
+      label: Did your decisions change how your airline did?
+      options:
+        - Not really
+        - Somewhat
+        - A lot
+    validations:
+      required: false
+  - type: dropdown
+    id: another
+    attributes:
+      label: Did you start a second airline?
+      options:
+        - "Yes"
+        - Not yet
+        - "No"
+    validations:
+      required: false
   - type: dropdown
     id: first-look
     attributes:
